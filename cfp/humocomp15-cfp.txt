@@ -1,0 +1,220 @@
+             C A L L   F O R   P A P E R S
+
+The 3rd IEEE International Workshop on Human Mobility Computing and Privacy
+             (HuMoComP 2015), collocated with the
+16th IEEE Intl. Conference on Mobile Data Management (MDM 2015)
+                    
+      June 15, 2015, Pittsburgh, Pennsylvania, USA
+
+            http://humocomp15.cs.ucy.ac.cy/
+
+
+AIMS & TOPICS OF INTEREST:
+
+This  is the  third of a successful series of workshops that aims to
+act as a bridge between human mobility, privacy, security and mobile 
+data management.
+
+Human mobility computing aims to acquire more insights about human daily life,
+including the activities, behaviors, habits, preferences and lifestyles by
+integrating a variety of heterogeneous data sources and by applying a range of
+techniques in multiple disciplines. In the past few years, the data capturing
+aspects of human mobility became widely available in the real world, e.g.,
+mobile phone records, GPS traces of vehicles and pedestrians, ticketing logs
+of public transportation, geo-tagged Web objects, as well as records from
+roadside sensor networks. As a result, we have a better chance to develop
+effective strategies and build intelligent systems that play critical
+roles in areas like public health, traffic engineering, urban planning and
+economic forecasting.
+
+Detailed movement data does not only provide valuable information, but it 
+often poses a threat to the privacy and security of users and companies, who
+are behind the digital location and trajectory data. Movement data can reveal
+the exact location of a user in real time to third parties, which is a 
+violation of user privacy by per se. But it is not only the user location that 
+is revealed by location traces; studying the movement patterns of a user can
+reveal sensitive information as the location of her home, where she works, 
+religious preferences and even indicate health problems. To counter privacy 
+and security risks, a series of technologies for protecting user privacy and 
+security have been developed including data anonymization methods, protocols 
+for securely posing location based queries and cryptographic methods for 
+exchanging location information in location based social networks.
+
+The HuMoComP workshop is an integration of the workshop on Human Mobility 
+Computing and the workshop on Privacy and Security for Moving Objects, 
+both of which were organized for the first time during IEEE MDM 2013 in 
+Milan, Italy (June 2013).
+
+The topics of interest are related to the full spectrum of mobile data management
+topics pertinent to human mobility and privacy/security, particularly:
+
+Human Mobility Computing Topics:
+* Activity and behavior mining from human mobility data
+* Big-data processing of human mobility data
+* Data quality and uncertainty issues study on human mobility data
+* Delay-tolerant and opportunistic human mobility networks
+* Discovery of human mobility patterns
+* Efficient indexing and processing for large-scale trajectories
+* Human mobility data compression
+* Human mobility computing in the Cloud
+* Human mobility testbeds
+* Human mobility social and crowdsourcing applications
+* Integration of heterogeneous human mobility data sources
+* Intelligent POI recommendation systems
+* Indoor human mobility applications and systems
+* Impacts of external incidents on human mobility
+* Mobility aware protocols
+* Participatory sensing and wearable systems
+* Platforms and applications for sensing and acquiring human mobility data
+* Real-time analysis for streaming trajectory data
+* Semantic annotation and tagging for human moving trajectories
+* Social behavior analysis on location-based social networks
+* Theoretic and/or empirical modeling of human mobility data
+
+Privacy and Security Topics:
+* Privacy-preserving analysis/mining of movement and location data
+* Privacy-preserving publishing of movement and location data
+* Anonymity in location-based services
+* Information hiding in geospatial data
+* Interdisciplinary approaches and studies for location data(e.g., law, economy, sociology, etc. )
+* Privacy policies in location based social networks
+* Secure and private protocols for exchanging location information
+* Systems for anonymous provision of location based services
+* Security and privacy metrics for location data and location based services
+* Utility and quality metrics for anonymized spatial data
+* Quality of service metrics for anonymous location-based services
+* Surveys of attacks against location based data, services and social networks
+* Experience papers from real-world privacy solutions for movement data
+* Presence-based access control
+* Privacy personalization based on context
+* Case studies/real world applications of context-aware privacy and security
+
+The workshop will be organized in a manner that fosters interaction and
+exchange of ideas among the participants. Besides regular papers, we
+will also consider vision, retrospective and work-in-progress papers
+that have the potential to stimulate debate on existing solutions or
+open  challenges. We additionally plan to accept a limited number of
+demonstration papers where researchers and technologists will have the
+opportunity to describe an innovative system or tool in the area of data
+management for mobile and wireless access. We discourage the submission
+of incremental papers. This year's program is also expected to feature
+a keynote speech and a panel discussion on newly-emerging or controversial
+topics.
+
+
+IMPORTANT DATES
+
+Paper/Demo Submission:       Fri, February 27, 2015 (midnight EST)
+Notification of Acceptance:  Tue, March 10, 2015
+Camera-ready Version Due:    Wed, April 01, 2015
+(Expected) Workshop Date:    Mon, June 15, 2015
+
+
+SUBMISSION INSTRUCTIONS AND PROCEEDINGS
+
+Manuscripts  in  the following  categories  will  be considered  for
+publication in the IEEE Proceedings of the 3rd IEEE International
+Workshop on Human Mobility Computing:
+
+* Regular papers  (max. 6  pages): The  submission should  describe
+significant  theoretical and/or  experimental  contributions to  the
+area of human mobility and mobile data management.
+
+* Demo  papers (max.  3 pages): The  submission should describe the
+architecture, implementation and usage of innovative tools or systems
+that fit the context of the workshop. The presentation of demo papers
+will be conducted in a designated session during the workshop (in the
+form of short presentations).
+
+All of the submissions should be in PDF format and conform to the IEEE MDM'15
+proceedings format. Submitted papers must not have been published or currently
+be under consideration for publication at another venue.
+
+All of the submissions will be handled electronically. Each paper will
+be  reviewed by several  members of the  program committee.
+Detailed submission information will be posted on the website of the workshop.
+
+The workshop proceedings will be published in the IEEE MDM proceedings
+(volume 2) and electronic versions of the papers will be included in the
+IEEE DL, DiSC'09 and DBLP.
+
+
+WORKSHOP CHAIRS
+
+* Adam J. Lee
+Department of Computer Science
+University of Pittsburgh, USA
+Email: adamlee@cs.pitt.edu
+
+* Konstantinos Pelechrinis
+School of Information Sciences
+University of Pittsburgh, USA
+E-mail: kpele@pitt.edu
+
+* Manolis Terrovitis
+Institute for the Management of Information Systems
+Research Center Athena, Greece
+Email: mter@imis.athena-innovation.gr
+
+* Demetrios Zeinalipour-Yazti
+Department of Computer Science
+University of Cyprus, Cyprus
+E-mail: dzeina@cs.ucy.ac.cy
+
+
+
+PROGRAM COMMITTEE
+
+* Georgios Chatzimilioudis, University of Cyprus, Cyprus
+* Muhammad-Aamir Cheema, Monash University, Australia
+* Balaji Palanisamy, University of Pittsburgh, USA
+* Panos K. Chrysanthis, University of Pittsburgh, USA
+* Max Egenhofer, University of Maine, USA
+* Aris Gkoulalas-Divanis, IBM Research, Ireland
+* Josep Domingo-Ferrerm, Universitat Rovira i Virgili, Spain
+* Takahiro Hara, Osaka Universit, Japan
+* Yoshiharu Ishikawa, Nagoya University, Japan
+* Christian S. Jensen, Aalborg University, Denmark
+* Vana Kalogeraki, Athens University of Economics and Business, Greece
+* Panagiotis Karras, Skoltech, Russia
+* Feifei Li, University of Utah, USA
+* John Liagouris, Research Center Athena, Greece
+* Grigorios Loukides, Cardiff University, UK
+* Hua Lu, Aalborg University, Denmark
+* Sergio Mascetti, University of Milan, Italy
+* Mohamed Mokbel, University of Minnesota, USA
+* Anna Monreale, University of Pisa, Italy
+* Kazuhiro Minami, Institute of Statistical Mathematics, Japan
+* Mario Nascimento, University of Alberta, Canada
+* Simonas Å altenis, Aalborg University, Denmark
+* Mohamed Sarwat, Arizona State University, USA
+* Mohamed A. Sharaf, The University of Queensland, Australia
+* Weiwei Sun, Fudan University, China
+* Yücel Saygin, Sabanci University, Turkey
+* Lv-An Tang, NEC Laboratories America, USA
+* Yannis Theodoridis, University of Piraeus, Greece
+* Goce Trajcevski, Northwestern University, USA
+* Xike Xie, Aalborg University, Denmark
+* Xing Xie, Microsoft Research, China
+* Yin Yang, Hamad Bin Khalifa University, Qatar 
+* Man-Lung Yiu, Hong Kong Polytechnic University, Hong Kong
+* Ying Zhang, The University of New South Wales, Australia
+* Wenjie Zhang, The University of New South Wales, Australia
+
+
+STEERING COMMITTEE
+
+* Ouri Wolfson    University of Illinois at Chicago, USA
+* Kai Zheng       University of Queensland, Australia
+
+
+WEBMASTER
+
+* Constantinos Costa    University of Cyprus, Cyprus
+
+CONTACT
+
+For further information please contact us at: humocomp15@cs.ucy.ac.cy   
+
+
+

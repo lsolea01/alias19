@@ -1,0 +1,1875 @@
+/*--------------------------------------------------------------------------
+
+	Eventcamp
+
+	0. YUI Library is used for CSS reset (http://yuilibrary.com/yui/docs/cssreset/)
+	1. Body
+	2. Typography
+	3. Page Sections
+		3.1. Topbar
+		3.2. Event
+		3.3. Speakers
+		3.4. Topics
+		3.5. Testimonials
+		3.6. News
+		3.7. Programs
+		3.9. Map
+		3.10. Sponsors
+		3.11. Footer
+	4. Forms
+
+--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------
+	1. Body
+--------------------------------------------------------------------------*/
+
+body {
+    color: #000;
+    background: #fff;
+    font: normal 16px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+/*--------------------------------------------------------------------------
+	2. Typography
+--------------------------------------------------------------------------*/
+
+/* Links */
+a, a:visited {
+    color: #FF9900;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover, a:focus {
+    color: #FF9900;
+}
+
+a:link {
+    color: #FF9900;
+}
+
+p a, p a:visited {
+    line-height: inherit;
+}
+
+/* Font stylings */
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+/*--------------------------------------------------------------------------
+	3. Sections
+
+	* Each block of the HTML page is named similar to "section-name"
+	* If you don't need a specific section, just remove the whole section div block in the HTML file
+--------------------------------------------------------------------------*/
+
+/* Common elements */
+
+h2 {
+    font: bold 36px/48px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+p.desc {
+    font: normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Font colors */
+.font-color-primary {
+    color: #FF9900;
+}
+
+.font-color-white {
+    color: #fff;
+}
+
+/* Colors - Underline */
+.underline-color-primary {
+    border-bottom: 1px solid #FF9900;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*---------------------------------------------------
+    3.1 Topbar
+
+    * This is the fixed top navigation
+---------------------------------------------------*/
+
+/* Topbar (fixed) */
+/* Please refer to responsive_custom.css for CSS in smaller viewport */
+#section-topbar {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    overflow: visible;
+    font: normal normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#topbar-inner {
+    /*	*	*	*	*	*	*	*	*	*	*	*
+        bg_alpha50.png file is used for transparent background
+        Look in the documentation file for usages of transparent png overlays
+    *	*	*	*	*	*	*	*	*	*	*	*/
+    background: #111;
+}
+
+/*	*	*	*	*	*	*	*	*	*	*	*
+    In mobile viewports, the list menu is converted to "select" element via javascript
+    https://github.com/lukaszfiszer/selectnav.js
+*	*	*	*	*	*	*	*	*	*	*	*/
+.selectnav {
+    display: none;
+}
+
+/*
+    Top Bar
+
+    By default, top navigation bar uses "fixed" position
+    Menu collapses in mobile viewports
+    Refer to css/responsive_custom.css for mobile layouts
+*/
+#section-topbar .navbar-default {
+    background: #000;
+}
+
+#section-topbar ul#nav {
+    /*display: block;*/
+    /*float: right;*/
+    position: relative;
+    margin: 0;
+}
+
+#section-topbar ul#nav > li {
+    /*display: block;*/
+    /*float: left;*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: #000;
+    color: #FF9900;
+}
+
+/*#section-topbar ul#nav a {*/
+/*display: block;*/
+/*padding: 10px 20px 15px 20px;*/
+/*font: normal 11px/18px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*text-decoration: none;*/
+/*}*/
+
+#section-topbar ul#nav a {
+    border-top: 3px solid #000;
+}
+
+#section-topbar ul#nav a:hover {
+    border-top: 3px solid #FF9900;
+    text-decoration: none;
+}
+
+#section-topbar ul#nav .active a {
+    border-top: 3px solid #FF9900;
+}
+
+#section-topbar ul#nav li ul {
+    display: none;
+}
+
+#section-topbar ul#nav li:hover > ul {
+    display: block;
+}
+
+#section-topbar ul#nav ul {
+    background: #000000;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+#section-topbar ul#nav ul li {
+    float: none;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    position: relative;
+}
+
+#section-topbar ul#nav ul li a {
+    padding: 15px 25px;
+}
+
+#section-topbar ul#nav ul li a:hover {
+    background: #FF9900;
+}
+
+#section-topbar ul#nav li ul .active a {
+    background: #FF9900;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/*---------------------------------------------------
+    3.2 Event
+
+    * Includes site logo and event details
+    * Date, Time, and Location of the event
+---------------------------------------------------*/
+
+#section-header {
+    color: #fff;
+    /* The background image used in this template is 1980 by 650 pixels */
+    background: #FF9900;
+    padding-top: 80px;
+}
+
+/* Site Title/Logo */
+#section-header h1 {
+    color: #fff;
+    font: bold 45px/65px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#section-header h1 a {
+    color: #FF9900;
+}
+
+#section-header h1 a:hover {
+    color: #FF9900;
+}
+
+#section-header p#logo-desc {
+    color: #bbb;
+}
+
+#section-header p#logo-desc img {
+    margin-bottom: 30px;
+}
+
+/* Event information */
+#section-info {
+    background: url('../images/alpha/bg_alpha30.png');
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+#section-info h2 {
+    color: #fff;
+    font: bold 16px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#section-info #box-date {
+    background: url('../images/icons/icon_date.png') no-repeat left 5px;
+    padding-left: 70px;
+}
+
+#section-info #box-time {
+    background: url('../images/icons/icon_time.png') no-repeat left 5px;
+    padding-left: 70px;
+}
+
+#section-info #box-location {
+    background: url('../images/icons/icon_map.png') no-repeat left 5px;
+    padding-left: 70px;
+}
+
+#section-info h3 {
+    color: #4C4C4C;
+    font: bold 13px/22px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+
+#section-info p {
+    color: #fff;
+    font: normal 13px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.five.columns.imp-dates-icons {
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 27px;
+}
+
+/*---------------------------------------------------
+    3.3 Speakers
+---------------------------------------------------*/
+
+#section-speakers {
+    color: #333;
+    background: #fff;
+    padding-top: 60px;
+}
+
+#section-speakers h2 {
+    color: #333;
+}
+
+#section-speakers p.desc {
+    color: #FF9900;
+}
+
+#section-speakers p {
+    margin-bottom: 40px;
+}
+
+/* Each speaker is wrapped by div#item */
+#section-speakers .item {
+
+}
+
+#section-speakers .item h3 {
+    color: #333;
+    font: normal 18px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+}
+
+/* Speaker title */
+#section-speakers .item h3 span {
+    color: #FF9900;
+    background: #fff;
+    font: normal 11px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    padding: 4px 0 0 0;
+    border-bottom: 1px solid #FF9900;
+
+}
+
+#section-speakers .item p {
+    font: normal 13px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin-top: 10px;
+}
+
+/*---------------------------------------------------
+    3.4 Topics
+---------------------------------------------------*/
+
+#section-topics {
+    color: #333;
+    background: #ffffff;
+    font: normal 16px/27px 'PT Serif', Georgia, serif;
+    padding: 60px 0 40px 0;
+}
+
+#section-topics p {
+    font: normal 12px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+#section-topics p img {
+    float: left;
+    margin: 0 18px 9px 0;
+}
+
+/*---------------------------------------------------
+    3.5 Testimonials
+---------------------------------------------------*/
+
+#section-testimonials {
+    color: #fff;
+    background: #111 url('../images/bg_gradient.jpg') no-repeat center center;
+    font: normal 12px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 60px 0;
+}
+
+#section-testimonials h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#section-testimonials p.desc {
+    color: #FF9900;
+    margin-bottom: 50px;
+}
+
+#section-testimonials .profile img {
+    padding: 3px;
+    border: 1px solid #333;
+    width: 70px;
+    float: left;
+    margin-right: 15px;
+}
+
+#section-testimonials blockquote.bubble {
+    position: relative;
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+}
+
+#section-testimonials blockquote.bubble p {
+    color: #333;
+    font: normal 13px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-testimonials span.title {
+    color: #FF9900;
+}
+
+/* creates the triangle */
+#section-testimonials blockquote.bubble:after {
+    content: "";
+    position: absolute;
+    top: -23px;
+    left: 50px;
+    border: 15px solid transparent;
+    border-bottom-color: #fff;
+
+    /* reduce the damage in FF3.0 */
+    display: block;
+    width: 0;
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+#section-testimonials blockquote.bubble + p {
+    padding-left: 15px;
+}
+
+/*---------------------------------------------------
+    3.6 News
+
+    * Contains an example article about the event
+---------------------------------------------------*/
+
+#section-about {
+    background: #fff;
+    padding: 60px 0;
+}
+
+#section-about h2 {
+}
+
+#section-about p.desc {
+    color: #FF9900;
+}
+
+#section-about p.headline {
+    color: #111;
+    font: italic 24px/36px 'PT Serif', Georgia, serif;
+    text-align: left;
+}
+
+#section-about p {
+    color: #555;
+    font: normal 14px/25px 'PT Serif', Georgia, serif;
+    margin-bottom: 30px;
+}
+
+#section-about p img.news-image {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+#section-about p img.news-image.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+#section-about ul {
+    font: normal 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+#section-about ul li {
+    color: #444;
+    background: #fff;
+    /*margin-top: 2px;*/
+    margin-left: 16px;
+    /*padding: 3px;*/
+}
+
+/*---------------------------------------------------
+    3.6 Rules
+
+    * Contains an example article about the event
+---------------------------------------------------*/
+
+#section-rules {
+    background: #fbffe9;
+    padding: 60px 0;
+}
+
+#section-rules h2 {
+}
+
+#section-rules p.desc {
+    color: #FF9900;
+}
+
+#section-rules p.headline {
+    color: #111;
+    font: italic 24px/36px 'PT Serif', Georgia, serif;
+    text-align: left;
+}
+
+#section-rules p {
+    color: #555;
+    font: normal 14px/25px 'PT Serif', Georgia, serif;
+    margin-bottom: 30px;
+}
+
+#section-rules p img.rules-image {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+#section-rules p img.rules-image.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+#section-rules ul {
+    font: normal 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+#section-rules ul li {
+    color: #444;
+    background: #fff;
+    margin-top: 2px;
+    padding: 16px 24px;
+}
+
+/*---------------------------------------------------
+    3.6 Submit
+
+    * Contains an example article about the event
+---------------------------------------------------*/
+
+#section-submit {
+    color: #333;
+    background: #e5f8ff;
+    padding: 60px 0;
+}
+
+#section-submit h2 {
+}
+
+#section-submit p.desc {
+    color: #FF9900;
+}
+
+#section-submit p.headline {
+    color: #111;
+    font: italic 24px/36px 'PT Serif', Georgia, serif;
+    text-align: left;
+}
+
+#section-submit p {
+    color: #555;
+    font: normal 14px/25px 'PT Serif', Georgia, serif;
+    margin-bottom: 30px;
+}
+
+#section-submit p img.news-image {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+#section-submit p img.news-image.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+#section-submit ul {
+    font: normal 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 5px;
+}
+
+#section-submit ul li {
+    color: #444;
+    background: #000000;
+}
+
+#section-submit a {
+    color: #FF9900;
+}
+
+#section-submit a:hover {
+    color: #eee;
+}
+
+#section-submit ul#paper {
+
+}
+
+#section-submit ul#paper li {
+    display: inline-block;
+}
+
+#section-submit ul#paper li a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #111;
+    border-left: 1px solid #111;
+}
+
+#section-submit ul#paper li a:hover {
+    background: #FF9900;
+}
+
+/*---------------------------------------------------
+    3.7 Programs
+
+    * Table with event timeline
+    * CSS is adjusted in the css/responsive_custom.css file
+---------------------------------------------------*/
+
+#section-programs {
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-programs h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#section-programs table {
+    background: #fff;
+    font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#section-programs table thead {
+    color: #FF9900;
+    font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+#section-programs table thead td.column-first {
+    background: #222;
+    border-top: 2px solid #333;
+    border-left: 1px solid #111;
+}
+
+#section-programs table thead td.column-second {
+    background: #111;
+    border-top: 2px solid #222;
+}
+
+#section-programs table tbody td.column-first {
+    border-left: 1px solid #eee;
+}
+
+#section-programs table tbody td.column-second {
+    color: #555;
+    border-right: 1px solid #eee;
+}
+
+#section-programs table tr.even {
+    background: #f8f8f8;
+}
+
+#section-programs table tbody td.column-first {
+    color: #555;
+}
+
+#section-programs table tbody tr.even td.column-first {
+    color: #333;
+}
+
+#section-programs table tbody td.column-second {
+    color: #333;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#section-programs table td {
+    padding: 20px;
+}
+
+#section-programs table tfoot td {
+    background: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#section-programs table tfoot span#line-sponsor {
+    color: #444;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+#section-programs table tfoot a {
+    color: #FF9900;
+}
+
+#section-programs table tfoot a:hover {
+    color: #222;
+}
+
+#section-programs p {
+    color: #555;
+    font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/*---------------------------------------------------
+    3.7 Winners
+
+    * Table with event timeline
+    * CSS is adjusted in the css/responsive_custom.css file
+---------------------------------------------------*/
+
+#section-winners {
+    background: #fff url('../images/bg_patterns.jpg');
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-winners h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#section-winners h1 {
+    color: #9a2623;
+    margin-bottom: 0px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+#section-winners table {
+    background: #fff;
+    font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#section-winners table thead {
+    color: #FF9900;
+    font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+#section-winners table thead td.column-first {
+    background: #222;
+    border-top: 2px solid #333;
+    border-left: 1px solid #111;
+}
+
+#section-winners table thead td.column-second {
+    background: #111;
+    border-top: 2px solid #222;
+}
+
+#section-winners table tbody td.column-first {
+    border-left: 1px solid #eee;
+}
+
+#section-winners table tbody td.column-second {
+    color: #555;
+    border-right: 1px solid #eee;
+}
+
+#section-winners table tr.even {
+    background: #f8f8f8;
+}
+
+#section-winners table tbody td.column-first {
+    color: #555;
+}
+
+#section-winners table tbody tr.even td.column-first {
+    color: #333;
+}
+
+#section-winners table tbody td.column-second {
+    color: #333;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#section-winners table td {
+    padding: 20px;
+}
+
+#section-winners table tfoot td {
+    background: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#section-winners table tfoot span#line-sponsor {
+    color: #444;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+#section-winners table tfoot a {
+    color: #FF9900;
+}
+
+#section-winners table tfoot a:hover {
+    color: #222;
+}
+
+#section-winners p {
+    color: #555;
+    font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/*---------------------------------------------------
+    3.7 Album
+
+    * Table with event timeline
+    * CSS is adjusted in the css/responsive_custom.css file
+---------------------------------------------------*/
+
+#section-album {
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-album h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#section-album table {
+    background: #fff;
+    font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#section-album table thead {
+    color: #FF9900;
+    font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+#section-album table thead td.column-first {
+    background: #222;
+    border-top: 2px solid #333;
+    border-left: 1px solid #111;
+}
+
+#section-album table thead td.column-second {
+    background: #111;
+    border-top: 2px solid #222;
+}
+
+#section-album table tbody td.column-first {
+    border-left: 1px solid #eee;
+}
+
+#section-album table tbody td.column-second {
+    color: #555;
+    border-right: 1px solid #eee;
+}
+
+#section-album table tr.even {
+    background: #f8f8f8;
+}
+
+#section-album table tbody td.column-first {
+    color: #555;
+}
+
+#section-album table tbody tr.even td.column-first {
+    color: #333;
+}
+
+#section-album table tbody td.column-second {
+    color: #333;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#section-album table td {
+    padding: 20px;
+}
+
+#section-album table tfoot td {
+    background: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#section-album table tfoot span#line-sponsor {
+    color: #444;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+#section-album table tfoot a {
+    color: #FF9900;
+}
+
+#section-album table tfoot a:hover {
+    color: #222;
+}
+
+#section-album p {
+    color: #555;
+    font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/*---------------------------------------------------
+    3.7 Organization
+
+    * Table with event timeline
+    * CSS is adjusted in the css/responsive_custom.css file
+---------------------------------------------------*/
+
+#section-organization {
+    background: #fff url('../images/bg_patterns.jpg');
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-organization h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#section-organization table {
+    background: #fff;
+    font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#section-organization table thead {
+    color: #FF9900;
+    font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+#section-organization table thead td.column-first {
+    background: #222;
+    border-top: 2px solid #333;
+    border-left: 1px solid #111;
+}
+
+#section-organization table thead td.column-second {
+    background: #111;
+    border-top: 2px solid #222;
+}
+
+#section-organization table tbody td.column-first {
+    border-left: 1px solid #eee;
+}
+
+#section-organization table tbody td.column-second {
+    color: #555;
+    border-right: 1px solid #eee;
+}
+
+#section-organization table tr.even {
+    background: #f8f8f8;
+}
+
+#section-organization table tbody td.column-first {
+    color: #555;
+}
+
+#section-organization table tbody tr.even td.column-first {
+    color: #333;
+}
+
+#section-organization table tbody td.column-second {
+    color: #333;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#section-organization table td {
+    padding: 20px;
+}
+
+#section-organization table tfoot td {
+    background: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#section-organization table tfoot span#line-sponsor {
+    color: #444;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+#section-organization table tfoot a {
+    color: #FF9900;
+}
+
+#section-organization table tfoot a:hover {
+    color: #222;
+}
+
+#section-organization p {
+    color: #555;
+    font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/*---------------------------------------------------
+    3.7 Judges
+
+    * Table with event timeline
+    * CSS is adjusted in the css/responsive_custom.css file
+---------------------------------------------------*/
+
+#section-judges {
+    background: #fff url('../images/bg_patterns.jpg');
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-judges h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#section-judges table {
+    background: #fff;
+    font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#section-judges table thead {
+    color: #FF9900;
+    font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+#section-judges table thead td.column-first {
+    background: #222;
+    border-top: 2px solid #333;
+    border-left: 1px solid #111;
+}
+
+#section-judges table thead td.column-second {
+    background: #111;
+    border-top: 2px solid #222;
+}
+
+#section-judges table tbody td.column-first {
+    border-left: 1px solid #eee;
+}
+
+#section-judges table tbody td.column-second {
+    color: #555;
+    border-right: 1px solid #eee;
+}
+
+#section-judges table tr.even {
+    background: #f8f8f8;
+}
+
+#section-judges table tbody td.column-first {
+    color: #555;
+}
+
+#section-judges table tbody tr.even td.column-first {
+    color: #333;
+}
+
+#section-judges table tbody td.column-second {
+    color: #333;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#section-judges table td {
+    padding: 20px;
+}
+
+#section-judges table tfoot td {
+    background: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#section-judges table tfoot span#line-sponsor {
+    color: #444;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+#section-judges table tfoot a {
+    color: #FF9900;
+}
+
+#section-judges table tfoot a:hover {
+    color: #222;
+}
+
+#section-judges p {
+    color: #555;
+    font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/*---------------------------------------------------
+    3.7 Archive
+
+    * Table with event timeline
+    * CSS is adjusted in the css/responsive_custom.css file
+---------------------------------------------------*/
+
+#section-archive {
+    background: #fff url('../images/bg_patterns.jpg');
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-archive h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#section-archive table {
+    background: #fff;
+    font: normal 14px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+#section-archive table thead {
+    color: #FF9900;
+    font: bold 22px/31px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: none;
+}
+
+#section-archive table thead td.column-first {
+    background: #222;
+    border-top: 2px solid #333;
+    border-left: 1px solid #111;
+}
+
+#section-archive table thead td.column-second {
+    background: #111;
+    border-top: 2px solid #222;
+}
+
+#section-archive table tbody td.column-first {
+    border-left: 1px solid #eee;
+}
+
+#section-archive table tbody td.column-second {
+    color: #555;
+    border-right: 1px solid #eee;
+}
+
+#section-archive table tr.even {
+    background: #f8f8f8;
+}
+
+#section-archive table tbody td.column-first {
+    color: #555;
+}
+
+#section-archive table tbody tr.even td.column-first {
+    color: #333;
+}
+
+#section-archive table tbody td.column-second {
+    color: #333;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+#section-archive table td {
+    padding: 20px;
+}
+
+#section-archive table tfoot td {
+    background: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#section-archive table tfoot span#line-sponsor {
+    color: #444;
+    font: normal normal 14px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+#section-archive table tfoot a {
+    color: #FF9900;
+}
+
+#section-archive table tfoot a:hover {
+    color: #222;
+}
+
+#section-archive p {
+    color: #555;
+    font: normal 13px/21px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Select the color of the * if the field is required. */
+
+#contact-warning {
+    display: none;
+    color: #fff;
+    background: #FF9900;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+#contact-success {
+    display: none;
+    color: #77aa44;
+    background: #111;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+/*---------------------------------------------------
+    3.8 Contact
+---------------------------------------------------*/
+
+#section-contact {
+    color: #fff;
+    padding: 0px 0;
+    background: #FF9900;
+    padding: 60px 0;
+}
+
+#section-contact h2 {
+    color: #FF9900;
+    margin-bottom: 5px;
+}
+
+#section-contact p.desc {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+#section-contact form {
+    margin-bottom: 40px;
+}
+
+#section-contact form p,
+#section-contact label,
+#section-contact legend {
+    font: normal 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-contact label {
+    display: inline-block;
+    float: left;
+    width: 155px;
+    margin: 6px 0;
+}
+
+#section-contact input,
+#section-contact textarea,
+#section-contact select {
+    width: 280px;
+    padding: 14px 20px;
+    color: #eee;
+    background: #333;
+    margin: 0 0 35px 0;
+    border: 0;
+    outline: none;
+}
+
+#section-contact input:focus,
+#section-contact textarea:focus,
+#section-contact select:focus {
+    color: #fff;
+    background-color: #FF9900;
+}
+
+#section-contact button.submit {
+    font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    background: #FF9900;
+    padding: 20px 28px;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#section-contact button.submit:hover {
+    color: #FF9900;
+    background: #fff;
+}
+
+#section-contact span.required {
+    color: #FF9900;
+    font-size: 13px;
+}
+
+/* Select the color of the * if the field is required. */
+
+#contact-warning {
+    display: none;
+    color: #fff;
+    background: #FF9900;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+#contact-success {
+    display: none;
+    color: #77aa44;
+    background: #111;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+#section-contact #box-contact {
+    margin-bottom: 60px;
+}
+
+#section-contact #box-contact h3 {
+    color: #000000;
+    font: bold 15px/23px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#section-contact #box-contact p.address {
+    color: #4C4C4C;
+    font: normal 17px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+#section-contact #box-contact p.address {
+    color: #4C4C4C;
+    font: normal 17px/25px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+#section-contact #box-contact a {
+    color: #fff;
+    font: normal normal 19px/28px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-contact #box-contact a:hover {
+    color: #414141;
+}
+
+/* PDF Download */
+a.link-pdf {
+    color: #FF9900;
+    background: url(../images/icons/icon_pdf.png) no-repeat;
+    font: bold 16px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding: 40px 60px;
+}
+
+/* PDF Download */
+a.link-pdf {
+    color: #FF9900;
+    background: url(../images/icons/text-icon.png) no-repeat;
+    font: bold 16px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding: 40px 60px;
+}
+
+a.link-pdf span {
+    background: #fff;
+    padding: 3px 6px;
+}
+
+a.link-pdf:hover {
+    color: #fff;
+}
+
+a.link-pdf:hover span {
+    background: #000;
+}
+
+/* PDF Download */
+a.link-pdf-black {
+    color: #FF9900;
+    background: url(../images/icons/icon_pdf-black.png) no-repeat;
+    font: bold 16px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding: 40px 60px;
+}
+
+a.top-link-pdf-black {
+    color: #FF9900;
+    background: url(../images/icons/icon_pdf-black.png) no-repeat;
+    background-size: 35px 40px;
+    font: bold 15px/20px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: center;
+}
+
+a.top-link-pdf-black span {
+    background: rgba(226, 226, 226, 0.90);
+    padding: 3px 6px;
+}
+
+a.top-link-winners-black {
+    color: #FF9900;
+    background: url(../images/icons/winners.png) no-repeat;
+    background-size: 35px 35px;
+    font: bold 15px/20px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+a.top-link-winners-black span {
+    background: rgba(226, 226, 226, 0.90);
+    padding: 3px 6px;
+}
+
+a.winners-game-black {
+    color: #FF9900;
+    background: url(../images/icons/game_icon.png) no-repeat;
+    background-size: 35px 35px;
+    font: bold 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+a.winners-game-black span {
+    background: rgba(226, 226, 226, 0.90);
+    padding: 3px 6px;
+}
+
+a.winners-required-black {
+    color: #FF9900;
+    background: url(../images/icons/files_icon.png) no-repeat;
+    background-size: 35px 35px;
+    font: bold 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+a.winners-required-black span {
+    background: rgba(226, 226, 226, 0.90);
+    padding: 3px 6px;
+}
+
+/*---------------------------------------------------
+    3.9 Map
+---------------------------------------------------*/
+
+#section-map {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+#section-map #box-map {
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+}
+
+#section-map #box-map h2 {
+    color: #222;
+}
+
+#map-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*---------------------------------------------------
+    3.10 Sponsors
+---------------------------------------------------*/
+
+#section-sponsors {
+    color: #333;
+    background: #fff url('../images/bg_patterns.jpg');
+    padding: 60px 0 90px 0;
+}
+
+#section-sponsors h2 {
+    font: bold 24px/36px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+#section-sponsors img {
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------------------
+3.6 dates
+
+    * Contains an example article about the event
+---------------------------------------------------*/
+
+#section-dates {
+    color: #333;
+    background: #fff;
+    padding: 60px 0;
+}
+
+#section-dates h2 {
+}
+
+#section-dates p.desc {
+    color: #FF9900;
+}
+
+#section-dates p.headline {
+    color: #111;
+    font: italic 24px/36px 'PT Serif', Georgia, serif;
+    text-align: left;
+}
+
+#section-dates p {
+    color: #555;
+    font: normal 18px/25px 'PT Serif', Georgia, serif;
+    margin-bottom: 30px;
+}
+
+#section-dates p img.news-image {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+#section-dates p img.news-image.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+#section-dates ul {
+    font: normal 15px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+#section-dates ul li {
+    color: #444;
+    background: #fff;
+    margin-top: 2px;
+    padding: 16px 24px;
+}
+
+/*---------------------------------------------------
+    3.11 Footer
+---------------------------------------------------*/
+
+#section-footer {
+    font: normal 13px/26px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+#section-footer p#copytext {
+    color: #777;
+    margin: 35px 0;
+}
+
+#section-footer a {
+    color: #FF9900;
+}
+
+#section-footer a:hover {
+    color: #eee;
+}
+
+#section-footer ul#social {
+    float: right;
+    border-left: 1px solid #111;
+}
+
+#section-footer ul#social li {
+    display: inline-block;
+    float: left;
+}
+
+#section-footer ul#social li a {
+    display: block;
+    padding: 30px;
+    border-right: 1px solid #111;
+}
+
+#section-footer ul#social li a:hover {
+    background: #FF9900;
+}
+
+/*--------------------------------------------------------------------------
+   4. Forms
+--------------------------------------------------------------------------*/
+
+/* HTML5 Placeholder */
+::-webkit-input-placeholder {
+    color: #FF9900;
+}
+
+:-moz-placeholder {
+    color: #FF9900;
+}
+
+.top_txt {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #000000;
+    text-align: center;
+}
+
+.top_pdf_download {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.txt_center {
+    text-align: center;
+}
+
+.top_img {
+    margin-top: 10px;
+}
+
+.top_image {
+    margin-right: 10px;
+}
+
+.timeline-header {
+    padding: 8px;
+    /*text-align: center;*/
+}
+
+.pin_img {
+    float: right;
+    margin-top: -44px;
+    margin-right: -10px;
+}
+
+.img1,
+.img2 {
+    max-width: 50%;
+}
+
+.center {
+    text-align: center; /* center everything in the container */
+}
+
+.sponsor_image_top {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.img_center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------- */
+/*	Back Top
+/* -------------------------------------------------- */
+
+#back-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: none;
+    width: 33px;
+    height: 33px;
+    background-color: #FF9900;
+    text-align: center;
+    font: 0/0 a;
+
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+#back-top:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33px;
+    height: 33px;
+    background-image: url(../images/back-to-top.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+/* -------------------------------------------------- */
+/*	Gallery Images
+/* -------------------------------------------------- */
+.KLbuttons a.KLback.button {
+    background: url('../images/icons/prev.png') no-repeat center !important;
+}
+
+.KLbuttons a.KLnext.button {
+    background: url('../images/icons/next.png') no-repeat center !important;
+}
+
+.KLbuttons a.KLplay.button {
+    background: url('../images/icons/play.png') no-repeat center !important;
+}
+
+.KLbuttons a.KLplay.button.pause {
+    background: url('../images/icons/pause.png') no-repeat center !important;
+}
+
+.KLthumbnails a.KLthumbs_back {
+    background: url('../images/icons/backward.png') no-repeat center !important;
+}
+
+.KLthumbnails .KLthumbs_forward {
+    background: url('../images/icons/forward.png') no-repeat center !important;
+}
+
+.KLbuttons a.KLthumbs_switcher.button {
+    background: url('../images/icons/thumbs.png') no-repeat center !important;
+}
+
+/*OVERWRITE*/
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+}
+
+
+#back-top {
+    border: solid #ffffff 1px;
+}
+
+.modal-dialog {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.modal-content {
+    height: 100%;
+    border-radius: 0;
+}

@@ -1,0 +1,1570 @@
+html body {
+    display: block;
+    background: transparent
+}
+
+html, body, h1, h2, h3, blockquote, p, ol, ul, li, img, iframe, button {
+    padding: 0;
+    margin: 0;
+    color: #555;
+    font: normal 14px/25px 'PT Serif', Georgia, serif;
+    /*font: normal normal normal 12px/16px "Helvetica Neue", Arial, sans-serif;*/
+    text-decoration: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-transform: none;
+    vertical-align: baseline;
+    /*list-style: none;*/
+    border: 0;
+    -webkit-outline: 0;
+    -moz-outline: 0;
+    -ms-outline: 0;
+    -o-outline: 0;
+    outline: 0
+}
+
+b, i {
+    font-style: normal;
+    font-weight: normal
+}
+
+abbr {
+    border-bottom: 0
+}
+
+.p-author:before, .p-author:after, .cards-base:before, .cards-base:after {
+    display: table;
+    content: ""
+}
+
+.p-author:after, .cards-base:after {
+    clear: both
+}
+
+.tweet, .root, .p-author {
+    zoom: 1
+}
+
+.root, .tweet, .footer, .detail-expander, .header, .timeline {
+    position: relative
+}
+
+button.load-more, .tweet-box-button, .no-tweets-pane .load-tweets {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.timeline {
+    font-family: 'Helvetica Neue', Arial, sans-serif
+}
+
+.no-tweets-pane p {
+    font-size: 20px;
+    line-height: 24px
+}
+
+.timeline-header .custom-timeline-summary, .timeline-header h1.summary {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px
+}
+
+.custom-timeline-owner-profile, .timeline .e-entry-title, .p-author .p-name, .cards-base h3, .new-tweets-bar button, .load-tweets, .no-more-pane {
+    font-size: 14px;
+    line-height: 16px
+}
+
+.tweet-box-button {
+    font-size: 13px
+}
+
+.stats strong, .timeline-header- .byline, .timeline-header .list-description {
+    font-size: 12px;
+    line-height: 18px
+}
+
+.timeline-header .byline {
+    margin: 2px 0
+}
+
+.stats span {
+    font-size: 10px
+}
+
+.timeline-header .custom-timeline-description {
+    font-size: 14px;
+    font-weight: 200;
+    color: #707070
+}
+
+.custom-timeline-owner-profile .p-nickname {
+    font-size: 13px
+}
+
+.custom-timeline-owner-profile .p-name, .p-author .profile .p-name, .cards-base .profile .p-name {
+    font-weight: bold
+}
+
+.p-author a, .e-entry-title, .cards-base h3, .cards-base .cards-content p {
+    line-height: 18px
+}
+
+.e-entry-title a {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+a, a:visited, a:active, a:hover, a:focus, .p-author .full-name, .p-author a.profile, .p-author a.profile:hover .p-nickname, .p-author a.profile:focus .p-nickname, .p-author a.profile:hover .p-nickname b, .p-author a.profile:focus .p-nickname b, .timeline-header .custom-timeline-owner-profile:hover, .timeline-header .custom-timeline-owner-profile:focus, .custom-timeline-owner-profile:hover .p-nickname, .custom-timeline-owner-profile:focus .p-nickname, .custom-timeline-owner-profile:hover .p-nickname b, .custom-timeline-owner-profile:focus .p-nickname b, .cards-base a.profile:hover .p-nickname, .cards-base a.profile:focus .p-nickname, .cards-base a.profile:hover .p-nickname b, .cards-base a.profile:focus .p-nickname b, .cards-base .byline-user .p-nickname {
+    text-decoration: none;
+    outline: 0
+}
+
+a:hover b, a:focus b, a:hover span, a:focus span, h3 a:hover, h3 a:focus, .timeline-header a:hover, .timeline-header a:focus, .e-entry-title .link:hover, .e-entry-title .link:focus, .footer a.expand:hover, .footer a.expand:focus, a.permalink:hover, a.permalink:focus, a.long-permalink:hover, a.long-permalink:focus, .cards-base p a:hover, .cards-base p a:focus, .retweet-credit a:hover, .retweet-credit a:focus {
+    text-decoration: underline
+}
+
+html, .p-author .profile .p-name, .custom-timeline-owner-profile .p-name, .cards-base p, .cards-base p a, .timeline-header .custom-timeline-summary, .timeline-header .custom-timeline-summary a:link, .timeline-header .custom-timeline-summary a:visited, .timeline-header .summary, .timeline-header .summary a:link, .timeline-header .summary a:visited, .p-author a.profile:hover .p-name, .p-author a.profile:focus .p-name {
+    color: #292f33
+}
+
+.customisable, .customisable:link, .customisable:visited, .customisable:hover, .customisable:focus, .customisable:active, .customisable-highlight:hover, .customisable-highlight:focus, a:hover .customisable-highlight, a:focus .customisable-highlight {
+    color: #0084b4
+}
+
+a:link, a:visited, .stats span, .byline, .retweet-credit, .no-more-pane, .no-tweets-pane p, .p-geo, .cards-base .byline-user {
+    color: #707070
+}
+
+a:hover, a:focus, a:active, .p-author a.profile:hover, .p-author a.profile:focus, .retweet-credit .profile:hover, .retweet-credit .profile:focus, .stats strong, .no-tweets-pane .load-tweets, .nsfw {
+    color: #66757f
+}
+
+.tweet-box-button {
+    color: #aaa
+}
+
+.customisable-border {
+    border: 1px solid #e8e8e8
+}
+
+.verified b, .tweet-actions b, abbr.p-geo b, .timeline-header .ic-twitter-badge b, .e-entry-title a .tco-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0)
+}
+
+.verified, .ic-rt, .ic-mask, .ic-top, .ic-twitter-alert, .timeline-header .ic-twitter-badge, .ic-bird-flourish, .ic-button-bird {
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(../images/sprite.png) no-repeat 0 0;
+    background-image: url(data:image/png;base64,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);
+    background-size: 177px 191px
+}
+
+.verified {
+    width: 15px;
+    height: 17px;
+    margin-left: -21px;
+    vertical-align: -25%;
+    background-position: 0 -161px
+}
+
+.timeline-header .ic-twitter-badge {
+    width: 18px;
+    height: 15px;
+    background-position: -19px -160px
+}
+
+.ic-top {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    margin: 2px 4px 0 0;
+    vertical-align: top;
+    background-position: 0 -181px
+}
+
+.ic-twitter-alert {
+    width: 16px;
+    height: 12px;
+    margin: 0 3px 3px 0;
+    background-position: -80px -142px
+}
+
+.ic-bird-flourish {
+    display: block;
+    width: 32px;
+    height: 20px;
+    margin: 12px auto 0;
+    background-position: -40px -161px
+}
+
+.ic-button-bird {
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0 0;
+    background-position: -73px -160px
+}
+
+.ic-mask {
+    width: 12px;
+    height: 13px;
+    background-color: #999
+}
+
+a:hover .ic-mask, a:focus .ic-mask {
+    background-color: #0084b4
+}
+
+.ic-reply {
+    width: 19px;
+    height: 15px;
+    background-position: 0 -87px
+}
+
+.ic-retweet {
+    width: 22px;
+    height: 15px;
+    background-position: -31px -87px
+}
+
+.ic-fav {
+    width: 16px;
+    height: 15px;
+    background-position: -60px -87px
+}
+
+.ic-geo, .ic-pho, .ic-sum, .ic-pla, .ic-con {
+    display: inline-block;
+    width: 16px;
+    height: 16px
+}
+
+.ic-geo {
+    background-position: -100px -29px
+}
+
+.ic-pho {
+    background-position: -60px -29px
+}
+
+.ic-sum {
+    background-position: -120px -29px
+}
+
+.ic-pla {
+    background-position: -80px -29px
+}
+
+.ic-con {
+    background-position: -140px -29px
+}
+
+.ic-rt {
+    width: 14px;
+    height: 16px;
+    margin-right: 4px;
+    background-position: -20px -2px
+}
+
+.timeline {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px
+}
+
+.timeline .stream {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.timeline.pending-scroll-in .stream .h-feed {
+    -webkit-transition: margin-top .5s ease-out;
+    -moz-transition: margin-top .5s ease-out;
+    -o-transition: margin-top .5s ease-out;
+    transition: margin-top .5s ease-out
+}
+
+.timeline-header, .timeline-footer {
+    position: relative;
+    z-index: 100
+}
+
+.timeline-header {
+    padding: 12px;
+    border-width: 0 0 1px;
+    box-shadow: 0 0 0 -3px rgba(0, 0, 0, 0);
+    -webkit-transition: box-shadow .3s ease-out;
+    -moz-transition: box-shadow .3s ease-out;
+    -o-transition: box-shadow .3s ease-out;
+    transition: box-shadow .3s ease-out
+}
+
+.scrolled-down .timeline-header {
+    box-shadow: 0 0 10px -3px #ccc
+}
+
+.timeline-header h1.summary {
+    font-weight: bold
+}
+
+.timeline-header .list-description {
+    font-family: Georgia, Palatino, serif;
+    font-style: italic
+}
+
+.timeline-header .follow-button, .timeline-header .twitter-follow-button, .timeline-header .ic-twitter-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.timeline-header .ic-twitter-badge {
+    border: 1px solid #fff;
+    border-color: transparent;
+    border-radius: 3px
+}
+
+.timeline-header .ic-twitter-badge:focus {
+    border-color: #00acee
+}
+
+.new-tweets-bar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    width: auto;
+    margin-top: -2px;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in
+}
+
+.pending-new-tweet-display .new-tweets-bar {
+    display: block
+}
+
+.pending-new-tweet .new-tweets-bar {
+    opacity: 1
+}
+
+.new-tweets-bar button {
+    width: 100%;
+    _width: 92%;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-width: 0
+}
+
+.new-tweets-bar button:hover, .new-tweets-bar button:focus {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+button.load-more {
+    display: block;
+    width: 100%;
+    *width: 92%;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    background-color: #fcfcfc;
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 0;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.05);
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out
+}
+
+button.load-more:hover, button.load-more:focus {
+    text-decoration: underline;
+    background-color: #eee;
+    background-color: rgba(0, 0, 0, 0.08)
+}
+
+.no-more-pane {
+    display: none;
+    padding: 12px;
+    text-align: center
+}
+
+.empty-timeline button.load-more, .no-more button.load-more {
+    display: none
+}
+
+.no-more .no-more-pane {
+    display: block
+}
+
+.no-tweets-pane {
+    margin: 30px 0;
+    text-align: center
+}
+
+.no-tweets-pane p {
+    margin: 24px 12px;
+    font-weight: 200;
+    text-align: center
+}
+
+.nsfw .display-sensitive-image, .no-tweets-pane .load-tweets {
+    padding: 5px 10px;
+    margin: 5px auto;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    background-color: #dedede;
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: -webkit-linear-gradient(#fff, #ddd);
+    background-image: linear-gradient(#fff, #ddd);
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px
+}
+
+.nsfw .display-sensitive-image:hover, .nsfw .display-sensitive-image:focus, .nsfw .display-sensitive-image:active, .no-tweets-pane .load-tweets:hover, .no-tweets-pane .load-tweets:focus, .no-tweets-pane .load-tweets:active {
+    background-color: #f8f8f8;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15));
+    border-color: #bbb;
+    border-color: rgba(0, 0, 0, 0.27)
+}
+
+.nsfw .display-sensitive-image:active, .no-tweets-pane .load-tweets:active {
+    background-color: #efefef;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1)
+}
+
+.has-tweets .no-tweets-pane {
+    display: none
+}
+
+.timeline-footer {
+    padding: 6px 10px;
+    background: #e8e8e8;
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.timeline-footer a.widget-link {
+    display: block;
+    padding: 10px;
+    text-align: center
+}
+
+.tweet-box-button {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    text-align: left;
+    background: #fff;
+    border: 1px #ccc solid;
+    border-radius: 4px
+}
+
+.tweet-box-button:hover, .tweet-box-button:focus {
+    cursor: pointer;
+    border-color: #999;
+    border-color: rgba(0, 0, 0, 0.4)
+}
+
+a.tweet-box-button {
+    width: auto
+}
+
+.tweet {
+    padding: 12px 12px 10px 69px;
+    border-width: 0 0 1px
+}
+
+.tweet.with-expansion {
+    cursor: pointer
+}
+
+.header {
+    _float: left;
+    _clear: left
+}
+
+.header .avatar {
+    position: absolute;
+    top: 0;
+    left: -57px;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 4px
+}
+
+.permalink {
+    position: relative;
+    z-index: 50;
+    float: right;
+    margin-top: 2px;
+    _clear: right
+}
+
+.tweet .e-entry-title {
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    clear: both;
+    word-wrap: break-word;
+    white-space: pre-wrap
+}
+
+.inline-media {
+    max-width: 100%;
+    margin: 10px 0 0;
+    overflow: hidden
+}
+
+.tweet .retweet-credit {
+    margin: 3px 0
+}
+
+.footer {
+    overflow: hidden;
+    zoom: 1
+}
+
+.tweet-actions {
+    position: absolute;
+    _position: static;
+    right: 0;
+    bottom: 1px;
+    _float: right;
+    background: #fff;
+    visibility: hidden;
+    _visibility: visible;
+    box-shadow: 0 0 10px 5px #fff
+}
+
+.tweet-actions li {
+    _display: inline;
+    float: left
+}
+
+.tweet-actions a i {
+    margin: 1px 0 0 8px;
+    *margin: 1px 0 0 3px;
+    overflow: hidden
+}
+
+.tweet:hover .tweet-actions, .tweet:focus .tweet-actions, .expanded .tweet-actions {
+    visibility: visible
+}
+
+.tweet .tweet-actions a, .tweet .tweet-actions a b, .tweet .tweet-actions a i, .tweet .tweet-actions li {
+    cursor: pointer;
+    outline: 0
+}
+
+.twt-tweet .tweet-actions .ic-retweet {
+    margin-top: 1px
+}
+
+.footer {
+    min-height: 16px;
+    padding-top: 1px;
+    margin-top: 2px;
+    overflow: hidden;
+    border-width: 0;
+    -webkit-transition: margin-top .2s ease-out, padding-top .2s ease-out;
+    -moz-transition: margin-top .2s ease-out, padding-top .2s ease-out;
+    -o-transition: margin-top .2s ease-out, padding-top .2s ease-out;
+    transition: margin-top .2s ease-out, padding-top .2s ease-out
+}
+
+.expanded .footer {
+    padding-top: 11px;
+    margin-top: 10px;
+    border-width: 1px 0 0
+}
+
+.expand, .p-geo {
+    _display: inline;
+    float: left
+}
+
+.stats-wide, .stats-narrow {
+    display: none;
+    margin-left: .3em;
+    border-width: 0
+}
+
+.expanded .stats-wide {
+    display: inline-block;
+    margin-top: -2px
+}
+
+.stats span {
+    display: inline-block;
+    margin-right: 3px;
+    text-transform: uppercase
+}
+
+.stats strong {
+    font-weight: bold
+}
+
+.detail-expander {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .3s ease-in;
+    -moz-transition: height .3s ease-in;
+    -o-transition: height .3s ease-in;
+    transition: height .3s ease-in
+}
+
+.detail-expander .detail-content {
+    _display: none
+}
+
+.expanded .detail-expander .detail-content {
+    _display: block
+}
+
+.cards-base {
+    padding: 13px 0 12px;
+    border-width: 0;
+    -webkit-transition: margin-top .3s ease-out;
+    -moz-transition: margin-top .3s ease-out;
+    -o-transition: margin-top .3s ease-out;
+    transition: margin-top .3s ease-out
+}
+
+.expanded .cards-base {
+    padding: 12px 0 0;
+    margin-top: 12px;
+    border-width: 1px 0 0
+}
+
+.expanded .cards-multimedia, .cards-multimedia {
+    padding-top: 0;
+    border-top: 0
+}
+
+.cards-base h3 {
+    margin: 0 0 4px 0;
+    font-weight: bold
+}
+
+.cards-base .cards-content p {
+    margin: 5px 0 10px
+}
+
+.cards-multimedia .cards-content-concise .byline {
+    margin-bottom: 8px
+}
+
+.cards-base .summary-thumbnail {
+    float: right;
+    max-width: 120px;
+    max-height: 120px;
+    margin: 4px 0 0 15px
+}
+
+.cards-base .media {
+    margin: 0 0 8px;
+    line-height: 0
+}
+
+.cards-base .source-user {
+    position: relative;
+    height: 16px;
+    padding-left: 21px;
+    margin: 10px 0;
+    line-height: 16px
+}
+
+.cards-base .source-user .avatar {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px
+}
+
+.custom-timeline-owner-profile {
+    display: block
+}
+
+.custom-timeline-owner-profile .verified {
+    margin-right: 3px;
+    margin-left: -38px
+}
+
+.custom-timeline .timeline-header {
+    border-bottom-width: 3px
+}
+
+.custom-timeline-owner-profile {
+    position: relative;
+    height: 16px;
+    padding-left: 21px;
+    line-height: 16px
+}
+
+.custom-timeline-owner-profile .avatar {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px
+}
+
+.custom-timeline .custom-timeline-summary {
+    margin-bottom: 11px
+}
+
+.custom-timeline .custom-timeline-description {
+    margin-bottom: 12px
+}
+
+.custom-timeline-owner-profile {
+    margin-bottom: 4px
+}
+
+.nsfw {
+    padding: 8px;
+    background-color: #fcfcfc;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 4px
+}
+
+.standalone-tweet {
+    padding: 8px 8px 0;
+    background: #fff;
+    border-radius: 5px
+}
+
+.standalone-tweet .subject {
+    margin-top: 4px
+}
+
+.standalone-tweet .subject {
+    padding: 4px 8px 8px;
+    border: 0
+}
+
+.standalone-tweet .subject .header {
+    position: relative;
+    _height: 48px;
+    min-height: 48px;
+    padding: 3px 0 4px 57px
+}
+
+.standalone-tweet .expanded .footer {
+    margin-top: 5px
+}
+
+.standalone-tweet .reply {
+    padding: 8px 8px 8px 65px
+}
+
+.standalone-tweet .subject .header .avatar {
+    left: 0
+}
+
+.standalone-tweet .subject .header .profile .p-name {
+    font-size: 16px
+}
+
+.standalone-tweet .subject .header .profile .p-nickname {
+    font-size: 14px
+}
+
+.standalone-tweet .subject .header .profile .p-nickname::before {
+    white-space: pre;
+    content: "\A"
+}
+
+.standalone-tweet .follow-button, .standalone-tweet .twitter-follow-button {
+    position: absolute;
+    top: 0;
+    right: 8px
+}
+
+.standalone-tweet.rtl .follow-button, .standalone-tweet.rtl .twitter-follow-button {
+    right: auto;
+    left: 0
+}
+
+.standalone-tweet .subject .e-entry-title {
+    font: 18px/24px Georgia, "Times New Roman", Palatino, serif
+}
+
+.standalone-tweet .subject .dateline {
+    margin-top: 6px
+}
+
+.standalone-tweet .subject .twitter-alerts {
+    margin-top: 6px
+}
+
+.standalone-tweet .subject .p-geo {
+    float: none
+}
+
+.standalone-tweet .subject .cards-base {
+    padding-bottom: 0
+}
+
+.standalone-tweet .subject .stats-narrow {
+    display: block;
+    float: left;
+    margin: 0
+}
+
+.standalone-tweet .subject .tweet-actions {
+    position: static;
+    float: right;
+    margin-bottom: 4px;
+    visibility: visible
+}
+
+.standalone-tweet .conversation {
+    padding: 8px 8px 4px 8px;
+    margin: -8px -8px 8px -8px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #e8e8e8;
+    border-bottom-color: rgba(0, 0, 0, 0.1)
+}
+
+.standalone-tweet .reply {
+    position: relative;
+    min-height: 48px;
+    border: 0
+}
+
+.follow-button:link, .follow-button:visited {
+    display: inline-block;
+    padding: 0 5px 0 3px;
+    font: bold 11px/18px 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: -webkit-linear-gradient(#fff, #dedede);
+    background-image: linear-gradient(#fff, #dedede);
+    border: #ccc solid 1px;
+    border-radius: 3px
+}
+
+.ie9 .follow-button:link, .ie9 .follow-button:visited {
+    border-radius: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dedede')"
+}
+
+.follow-button:focus, .follow-button:hover, .follow-button:active {
+    color: #333;
+    text-decoration: none;
+    background-color: #d9d9d9;
+    background-image: -webkit-linear-gradient(#f8f8f8, #d9d9d9);
+    background-image: linear-gradient(#f8f8f8, #d9d9d9);
+    border-color: #bbb;
+    box-shadow: none
+}
+
+.timeline-header a.follow-button:link, .timeline-header a.follow-button:visited, .timeline-header a.follow-button:hover, .timeline-header a.follow-button:focus, .timeline-header a.follow-button:active, .thm-dark .timeline-header a.follow-button:link, .thm-dark .timeline-header a.follow-button:visited, .thm-dark .timeline-header a.follow-button:hover, .thm-dark .timeline-header a.follow-button:focus, .thm-dark .timeline-header a.follow-button:active {
+    color: #333;
+    text-decoration: none
+}
+
+.thm-dark a.follow-button:link, .thm-dark a.follow-button:visited, .thm-dark a.follow-button:hover, .thm-dark a.follow-button:focus, .thm-dark a.follow-button:active {
+    color: #333
+}
+
+.ie9 .follow-button:hover, .ie9 .follow-button:focus, .ie9 .follow-button:active {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#d9d9d9')"
+}
+
+.follow-button:active {
+    background-color: #efefef;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1)
+}
+
+.follow-button:focus {
+    border-color: #0089cb;
+    outline: 0
+}
+
+.var-narrow .timeline-header .summary {
+    font-size: 14px
+}
+
+.var-narrow .custom-timeline-summary {
+    margin-bottom: 7px;
+    font-size: 14px
+}
+
+.var-narrow .custom-timeline-description {
+    margin-bottom: 10px
+}
+
+.var-narrow .header .profile .p-name, .var-narrow .timeline-header .byline, .var-narrow .timeline-header .list-description, .var-narrow .e-entry-title, .var-narrow .cards-base h3 {
+    font-size: 12px;
+    line-height: 16px
+}
+
+.var-narrow .timeline-header {
+    padding: 8px
+}
+
+.var-narrow .timeline-footer {
+    padding: 4px
+}
+
+.var-narrow .timeline-header .follow-button, .var-narrow .timeline-header .twitter-follow-button {
+    top: 6px;
+    right: 6px
+}
+
+.var-narrow .tweet {
+    padding: 5px 8px 6px 8px
+}
+
+.var-narrow .tweet .header {
+    position: relative;
+    _height: 36px;
+    min-height: 32px;
+    padding: 0 0 4px 36px
+}
+
+.var-narrow .header .avatar {
+    top: 2px;
+    left: 0;
+    width: 32px;
+    height: 32px
+}
+
+.var-narrow .header .profile .p-nickname::before {
+    white-space: pre;
+    content: "\A"
+}
+
+.var-narrow .header .p-name {
+    display: inline
+}
+
+.var-narrow .header .p-nickname {
+    line-height: 16px
+}
+
+.var-narrow .permalink {
+    font-size: 11px
+}
+
+.var-narrow .expanded .stats-wide {
+    display: none
+}
+
+.var-narrow .expanded .stats-narrow {
+    display: block;
+    margin: 0 0 4px 0;
+    font-size: 11px
+}
+
+.var-narrow .cards-base .summary-thumbnail {
+    max-width: 60px;
+    max-height: 60px
+}
+
+.var-narrow.standalone-tweet .subject {
+    margin-top: 1px
+}
+
+.var-narrow.standalone-tweet .subject .header .profile .p-name {
+    font-size: 14px
+}
+
+.var-narrow.standalone-tweet .subject .header .profile .p-nickname {
+    font-size: 12px
+}
+
+.var-narrow.standalone-tweet .subject .header {
+    margin-bottom: 8px
+}
+
+.var-narrow.standalone-tweet .subject .e-entry-title {
+    font-size: 16px;
+    line-height: 20px
+}
+
+.var-narrow.standalone-tweet .expanded .footer {
+    padding-top: 6px
+}
+
+.var-narrow.standalone-tweet .stats-narrow {
+    display: block;
+    float: none;
+    padding-bottom: 5px;
+    margin: 0 0 8px;
+    border-width: 0 0 1px
+}
+
+.var-narrow.standalone-tweet .tweet-actions {
+    position: static;
+    float: none;
+    margin-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.var-narrow.standalone-tweet .tweet-actions li {
+    display: inline-block;
+    float: none;
+    width: 33.33%;
+    text-align: center
+}
+
+.var-narrow.standalone-tweet .tweet-actions li a {
+    display: block;
+    width: 100%;
+    margin: 0
+}
+
+.var-narrow.standalone-tweet .tweet-actions a i {
+    margin: 0
+}
+
+.rtl, .rtl .tweet-box-button, .rtl .follow-button {
+    text-align: right;
+    direction: rtl
+}
+
+.rtl .p-nickname {
+    text-align: left;
+    direction: ltr
+}
+
+.rtl .header {
+    _float: right;
+    _clear: right
+}
+
+.rtl .permalink, .rtl .tweet-actions, .rtl .cards-base .summary-thumbnail {
+    float: left
+}
+
+.rtl .expand, .rtl .p-geo, .rtl .tweet-actions li {
+    float: right
+}
+
+.rtl .permalink {
+    clear: left
+}
+
+.rtl .custom-timeline-owner-profile {
+    padding-right: 21px;
+    padding-left: 0
+}
+
+.rtl .custom-timeline-owner-profile .avatar {
+    right: 0
+}
+
+.rtl .tweet {
+    padding: 12px 69px 10px 12px
+}
+
+.var-narrow.rtl .tweet {
+    padding: 5px 8px 6px 8px
+}
+
+.rtl .header .avatar {
+    right: -57px;
+    left: auto
+}
+
+.var-narrow.rtl .tweet .header {
+    padding: 0 36px 4px 0
+}
+
+.rtl.var-narrow .header .avatar {
+    right: 0
+}
+
+.rtl .tweet-actions {
+    right: auto;
+    left: 0
+}
+
+.rtl .timeline-header .follow-button, .rtl .timeline-header .twitter-follow-button, .rtl .timeline-header .ic-twitter-badge {
+    position: absolute;
+    right: auto;
+    left: 12px
+}
+
+.var-narrow.rtl .timeline-header .follow-button, .var-narrow.rtl .timeline-header .twitter-follow-button {
+    right: auto;
+    left: 6px
+}
+
+.rtl .cards-base .source-user {
+    padding: 0 21px 0 0
+}
+
+.rtl .cards-base .source-user .avatar {
+    right: 0;
+    left: auto
+}
+
+.rtl .follow-button {
+    padding: 0 3px 0 5px
+}
+
+.rtl .ic-top {
+    margin: 2px 0 0 4px
+}
+
+.rtl .ic-twitter-alert {
+    margin: 0 0 3px 3px
+}
+
+.rtl .ic-rt {
+    margin: 0 0 0 4px
+}
+
+.rtl .expand .ic-mask, .rtl .p-geo .ic-mask {
+    margin: 0 0 0 2px
+}
+
+.rtl .ic-button-bird {
+    margin: 0 0 0 3px
+}
+
+.rtl .stats span {
+    margin: 0 0 0 3px
+}
+
+.thm-dark {
+    color: #a9a9a9;
+    background-color: #333
+}
+
+.thm-dark .scrolled-down .timeline-header {
+    box-shadow: 0 0 10px -3px #000
+}
+
+.thm-dark .timeline-header .ic-twitter-badge {
+    border-color: #333;
+    border-color: transparent
+}
+
+.thm-dark .timeline-header .ic-twitter-badge:focus {
+    border-color: #00acee
+}
+
+.thm-dark .timeline-footer, .standalone-tweet.thm-dark .conversation {
+    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.thm-dark .load-more, .thm-dark .nsfw, .thm-dark .tweet-box-button {
+    background-color: #4a4a4a;
+    background-color: rgba(0, 0, 0, 0.64)
+}
+
+.thm-dark .load-more {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6)
+}
+
+.thm-dark .load-more:hover, .thm-dark .load-more:focus, .thm-dark .load-more:active {
+    background-color: #666;
+    background-color: rgba(0, 0, 0, 0.39)
+}
+
+.thm-dark .tweet-actions {
+    background-color: #333;
+    box-shadow: 0 0 10px 5px #333
+}
+
+.thm-dark .customisable, .thm-dark .customisable:link, .thm-dark .customisable:visited, .thm-dark .customisable:hover, .thm-dark .customisable:focus, .thm-dark .customisable:active, .thm-dark .customisable-highlight:hover, .thm-dark .customisable-highlight:focus, .thm-dark a:hover .customisable-highlight, .thm-dark a:focus .customisable-highlight {
+    color: #87c2ed
+}
+
+.thm-dark a:hover .ic-mask, .thm-dark a:focus .ic-mask {
+    background-color: #87c2ed
+}
+
+.thm-dark, .thm-dark .p-author .profile .p-name, .thm-dark .cards-base p, .thm-dark .cards-base p a, .thm-dark .timeline-header .summary, .thm-dark .timeline-header a:link, .thm-dark .timeline-header a:visited, .thm-dark .byline, .thm-dark .p-author a.profile:hover .p-name, .thm-dark .p-author a.profile:focus .p-name .thm-dark .custom-timeline-owner-profile .p-name:hover, .thm-dark .custom-timeline-owner-profile .p-name:focus {
+    color: #cfcfcf
+}
+
+.thm-dark .custom-timeline-summary, .thm-dark .custom-timeline-owner-profile .p-name {
+    color: #e5e5e5
+}
+
+.thm-dark .custom-timeline-description, .thm-dark .custom-timeline-owner-profile .p-nickname {
+    color: #999
+}
+
+.thm-dark a:link, .thm-dark a:visited, .thm-dark .stats span, .thm-dark .retweet-credit, .thm-dark .no-more-pane, .thm-dark .no-tweets-pane p, .thm-dark .p-geo, .thm-dark .cards-base .byline-user {
+    color: #a0a0a0
+}
+
+.thm-dark a:focus, .thm-dark a:hover, .thm-dark a:active, .thm-dark .p-author a.profile:hover, .thm-dark .p-author a.profile:focus, .thm-dark .custom-timeline-owner-profile:hover, .thm-dark .custom-timeline-owner-profile:focus, .thm-dark .retweet-credit .profile:hover, .thm-dark .retweet-credit .profile:focus, .thm-dark .stats strong, .thm-dark .no-tweets-pane .load-tweets, .thm-dark .nsfw {
+    color: #bbb
+}
+
+.customisable-border.thm-dark, .thm-dark .customisable-border {
+    border-color: #444
+}
+
+.thm-dark .tweet-box-button {
+    border-color: #222
+}
+
+.thm-dark .ic-mask {
+    background-color: #999
+}
+
+.thm-dark .tweet-actions .ic-reply {
+    background-position: 0 -116px
+}
+
+.thm-dark .tweet-actions .ic-retweet {
+    background-position: -31px -116px
+}
+
+.thm-dark .tweet-actions .ic-fav {
+    background-position: -60px -116px
+}
+
+.thm-dark .ic-pho {
+    background-position: -60px -59px
+}
+
+.thm-dark .ic-pla {
+    background-position: -80px -59px
+}
+
+.thm-dark .ic-geo {
+    background-position: -100px -59px
+}
+
+.thm-dark .ic-sum {
+    background-position: -120px -59px
+}
+
+.thm-dark .ic-con {
+    background-position: -140px -59px
+}
+
+.is-touch .tweet-actions {
+    visibility: visible
+}
+
+.is-touch .tweet-actions a {
+    padding-left: 10px
+}
+
+.is-touch.var-narrow .tweet-actions a {
+    padding-left: 0
+}
+
+.var-chromeless .tweet-actions .ic-mask, .thm-dark.var-chromeless .tweet-actions .ic-mask, .is-touch .tweet-actions .ic-mask {
+    background-color: transparent
+}
+
+.var-chromeless .tweet-actions .ic-reply, .is-touch .tweet-actions .ic-reply {
+    background-position: -80px -84px
+}
+
+.var-chromeless .tweet-actions .ic-retweet, .is-touch .tweet-actions .ic-retweet {
+    background-position: -82px -102px
+}
+
+.var-chromeless .tweet-actions .ic-fav, .is-touch .tweet-actions .ic-fav {
+    background-position: -82px -122px
+}
+
+.var-chromeless .tweet-actions a:hover .ic-reply, .var-chromeless .tweet-actions a:focus .ic-reply, .var-chromeless .tweet-actions a:active .ic-reply, .is-touch .tweet-actions a:hover .ic-reply, .is-touch .tweet-actions a:focus .ic-reply, .is-touch .tweet-actions a:active .ic-reply {
+    background-position: -103px -84px
+}
+
+.var-chromeless .tweet-actions a:hover .ic-retweet, .var-chromeless .tweet-actions a:focus .ic-retweet, .var-chromeless .tweet-actions a:active .ic-retweet, .is-touch .tweet-actions a:hover .ic-retweet, .is-touch .tweet-actions a:focus .ic-retweet, .is-touch .tweet-actions a:active .ic-retweet {
+    background-position: -109px -102px
+}
+
+.var-chromeless .tweet-actions a:hover .ic-fav, .var-chromeless .tweet-actions a:focus .ic-fav, .var-chromeless .tweet-actions a:active .ic-fav, .is-touch .tweet-actions a:hover .ic-fav, .is-touch .tweet-actions a:focus .ic-fav, .is-touch .tweet-actions a:active .ic-fav {
+    background-position: -103px -122px
+}
+
+.var-preview .load-more {
+    display: none
+}
+
+.timeline.var-chromeless {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0
+}
+
+.var-chromeless .timeline-header {
+    padding: 12px 0
+}
+
+.var-chromeless .tweet {
+    padding: 12px 2px 10px 58px
+}
+
+.var-narrow.var-chromeless .tweet {
+    padding: 12px 2px 10px 0
+}
+
+.var-chromeless.rtl .tweet {
+    padding: 12px 58px 10px 2px
+}
+
+.var-narrow.var-chromeless.rtl .tweet {
+    padding: 12px 0 10px 2px
+}
+
+.var-chromeless .permalink {
+    padding: 0 2px 0 0
+}
+
+.var-chromeless.rtl .permalink {
+    padding: 0 0 0 2px
+}
+
+.var-chromeless .timeline-footer {
+    padding: 6px
+}
+
+.var-chromeless .footer .ic-mask {
+    background-color: transparent
+}
+
+.var-chromeless .ic-geo {
+    background-position: -100px 0
+}
+
+.var-chromeless .ic-pho {
+    background-position: -60px -2px
+}
+
+.var-chromeless .ic-sum {
+    background-position: -120px -2px
+}
+
+.var-chromeless .ic-pla {
+    background-position: -80px -2px
+}
+
+.var-chromeless .ic-con {
+    background-position: -140px -2px
+}
+
+.var-chromeless .tweet-actions {
+    background: 0;
+    box-shadow: none
+}
+
+.var-chromeless span.p-geo {
+    padding: 0 90px 0 0
+}
+
+.var-chromeless.rtl span.p-geo {
+    padding: 0 0 0 90px
+}
+
+.var-chromeless button.load-more {
+    width: 98%;
+    margin: 4px;
+    text-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+
+.var-borderless, .var-borderless .customisable-border {
+    border: 0
+}
+
+.var-borderless .expanded .footer, .var-borderless .expanded .cards-base {
+    margin: 0
+}
+
+.var-borderless .expanded .cards-multimedia {
+    margin-top: 2px
+}
+
+.var-borderless .expanded .footer {
+    padding-top: 5px;
+    margin: 0
+}
+
+.var-headerless .timeline-header, .var-footerless .timeline-footer {
+    display: none
+}
+
+.var-static .stream {
+    overflow-y: visible
+}
+
+.var-static .load-more {
+    display: none
+}
+
+.var-static .tweet.with-expansion {
+    cursor: default
+}
+
+.withheld {
+    padding: 12px 12px 10px 12px;
+    border-width: 0 0 1px
+}
+
+.var-narrow .withheld {
+    padding: 5px 8px 6px 8px
+}
+
+.var-chromeless .withheld {
+    padding: 12px 2px 10px 0
+}
+
+.var-chromeless.rtl .withheld {
+    padding: 12px 0 10px 2px
+}
+
+.withheld-text a:hover, .withheld-text a:focus {
+    text-decoration: underline
+}
+
+.timeline .withheld-title {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.var-narrow .withheld-title {
+    font-size: 12px
+}
+
+.standalone-tweet.media-forward {
+    padding: 0
+}
+
+.standalone-tweet.media-forward, .standalone-tweet.media-forward .tweet {
+    position: static;
+    overflow: hidden
+}
+
+.standalone-tweet.media-forward .source-user {
+    font-size: 12px
+}
+
+.standalone-tweet.media-forward .content {
+    padding: 0 10px 3px 10px
+}
+
+.standalone-tweet.media-forward .subject .header .avatar {
+    top: 4px;
+    left: 10px;
+    width: 28px;
+    height: 28px
+}
+
+.standalone-tweet.rtl.media-forward .subject .header .avatar {
+    right: 10px;
+    left: auto
+}
+
+.standalone-tweet.media-forward .subject .header {
+    min-height: 36px;
+    padding: 0 0 0 47px
+}
+
+.standalone-tweet.rtl.media-forward .subject .header {
+    padding: 0 47px 0 0
+}
+
+.standalone-tweet.media-forward .subject .header .profile .p-name, .standalone-tweet.media-forward .subject .header .profile .p-nickname {
+    font-size: 12px
+}
+
+.standalone-tweet.media-forward .expanded .cards-base {
+    margin-top: 0
+}
+
+.standalone-tweet.media-forward .follow-button, .standalone-tweet.media-forward .twitter-follow-button {
+    top: 4px;
+    right: 10px
+}
+
+.standalone-tweet.rtl.media-forward .follow-button, .standalone-tweet.rtl.media-forward .twitter-follow-button {
+    right: auto;
+    left: 10px
+}
+
+.standalone-tweet.media-forward .subject .e-entry-title {
+    display: inline;
+    font-size: 16px;
+    line-height: 20px
+}
+
+.standalone-tweet.media-forward .expanded .footer {
+    padding-bottom: 8px;
+    margin: 2px 10px 0 10px
+}
+
+.standalone-tweet.media-forward .subject .dateline {
+    margin-top: 7px
+}
+
+.standalone-tweet.media-forward .cards-base .media {
+    margin-bottom: 6px;
+    text-align: center;
+    background-color: #1d1d1d
+}
+
+.standalone-tweet.media-forward .subject, .standalone-tweet.media-forward.var-narrow .subject {
+    padding: 0;
+    margin-top: 0
+}
+
+.var-narrow.standalone-tweet.media-forward .subject .header {
+    margin-bottom: 4px
+}
+
+.standalone-tweet.var-narrow.media-forward .subject .dateline .p-geo {
+    display: none
+}
+
+@media print {
+    .ic-mask {
+        display: none
+    }
+}
+
+/*OVEWRITE UL*/
+ul.circle {
+    list-style: circle;
+
+}
