@@ -24,6 +24,10 @@
 	1. Body
 --------------------------------------------------------------------------*/
 
+
+
+
+
 body {
     color: #000;
     background: #fff;
@@ -663,6 +667,18 @@ img {
     margin-bottom: 30px;
     text-align: center;
     letter-spacing: 4px;
+}#section-age {
+    background: #fff;
+    border-top: 1px solid #eee;
+    padding: 60px 0 90px 0;
+}
+
+#section-age h2 {
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 4px;
 }
 
 #section-programs table {
@@ -989,10 +1005,11 @@ img {
     background: #fff url('../images/bg_patterns.jpg');
     border-top: 1px solid #eee;
     padding: 60px 0 90px 0;
+    color: #050502;
 }
 
 #section-organization h2 {
-    color: #FF9900;
+    color: #fafffb;
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center;
